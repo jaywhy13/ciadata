@@ -3,6 +3,7 @@ from django.db import models
 class WebSiteModel(models.Model):
 
     web_id = models.IntegerField(blank=True, null=True)
+    #website = models.URLField(blank=True, null=True)
 
     class Meta:
         abstract = True

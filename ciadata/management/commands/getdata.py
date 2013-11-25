@@ -83,6 +83,7 @@ class Command(BaseCommand):
                         if created:
                             presenters_created += 1
                         presenter.slug = slug
+                        presenter.site_url = "http://gycweb.org/presenters/%s" % slug
                         presenter.save()
                 else:
                     presenter_id = sermon_json.get("presenter_id")
